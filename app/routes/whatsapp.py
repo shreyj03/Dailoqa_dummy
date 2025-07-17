@@ -19,10 +19,8 @@ import pdfplumber  # 🔄 Replaced fitz with pdfplumber for PDF OCR
 
 router = APIRouter()
 
-# ✅ Inject Anthropic API key directly (not using .env)
 os.environ["ANTHROPIC_API_KEY"] = "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"
 
-# ✅ LLM via Anthropic Claude (LangChain wrapper)
 llm = ChatAnthropic(
     model="claude-3-5-sonnet-20240620",
     temperature=0,
