@@ -8,14 +8,13 @@ class LoanSession(Base):
     phone_number = Column(String, index=True)
     user_name = Column(String)
     user_type = Column(String)
-    aadhar_uploaded = Column(Boolean, default=False)
-    salary_uploaded = Column(Boolean, default=False)
+    aadhar_number = Column(String)
     salary_amount = Column(Integer, nullable=True)
     tenure = Column(Integer, default=60)  # Default tenure in months
-    cibil_auth = Column(Boolean, default=False)
+    cibil_score = Column(Integer)
     loan_amount = Column(Integer)
     emi = Column(Float)
     consent_given = Column(Boolean, default=False)
-    step = Column(String)
     message_history = Column(Text, nullable=True)
+    step = Column(String)
 

@@ -1,6 +1,14 @@
 fastapi
 uvicorn
 sqlalchemy
-psycopg2
+python-dotenv
+requests
+pytesseract
+pdfplumber
 fpdf
+pillow
 twilio
+langchain
+langgraph
+langchain-anthropic
+anthropic

@@ -13,18 +13,16 @@ def get_all_sessions():
     return [
         {
             "id": s.id,
-            "phone_number": s.phone_number,
-            "user_name": s.user_name,
-            "user_type": s.user_type,
-            "loan_amount": s.loan_amount,
-            "emi": s.emi,
-            "step": s.step,
-            "salary_amount": s.salary_amount,
+            "Phone Number": s.phone_number,
+            "User Name": s.user_name,
+            "Loan Amount": s.loan_amount,
+            "EMI": s.emi,
+            "Step": s.step,
+            "Salary Amount": s.salary_amount,
             "consent_given": s.consent_given,
-            "aadhar_uploaded": s.aadhar_uploaded,
-            "tenure": s.tenure,
-            "salary_uploaded": s.salary_uploaded,
-            "cibil_auth": s.cibil_auth
+            "Aadhar Number": s.aadhar_number,
+            "Tenure": s.tenure,
+            "CIBIL Score": s.cibil_score
             
         }
         for s in sessions

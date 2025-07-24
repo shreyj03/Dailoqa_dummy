@@ -29,7 +29,7 @@ def generate_pdf(name, amount, emi, tenure, filename):
     # Document title
     pdf.set_font("Arial", "B", 14)
     pdf.set_text_color(0, 51, 102)
-    pdf.cell(0, 10, txt="LOAN SANCTION LETTER", ln=1, align="C")
+    pdf.cell(0, 10, txt="LOAN APPLICATION PREVIEW", ln=1, align="C")
     pdf.ln(5)
     
     # Reference details
