@@ -26,3 +26,8 @@ async def get_status():
 @app.get("/")
 async def health_check():
     return {"status": "WhatsApp Bot API is running"}
+
+# Initialize the database tables on app start
+from app.models import Base
+from app.database import engine
+Base.metadata.create_all(bind=engine)
